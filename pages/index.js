@@ -63,7 +63,7 @@ function HomePage(props) {
 // }
 export async function getStaticProps() {
     // fetch data from an API (Users in production or servver would neve see this code)
-    const client = await MongoClient.connect('mongodb+srv://Samu666:Password@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
+    const client = await MongoClient.connect('mongodb+srv://Samu666:LedZeppelin1989!@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
     const db = client.db();
 
     const meetupsCollection = db.collection('meetups');
