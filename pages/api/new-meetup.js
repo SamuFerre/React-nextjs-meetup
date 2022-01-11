@@ -9,7 +9,7 @@ async function handler(req, res) {
 
         // const { title, image, address, description } = data; // It isn't necessary
 
-        const client = await MongoClient.connect('mongodb+srv://User:Password@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
+        const client = await MongoClient.connect('mongodb+srv://Samu666:LedZeppelin1989!@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
         const db = client.db();
 
         const meetupsCollection = db.collection('meetups');
