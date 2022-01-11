@@ -25,7 +25,7 @@ function MeetupDetails(props) {
 
 export async function getStaticPaths() {
 
-    const client = await MongoClient.connect('mongodb+srv://Samu666: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@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
+    const client = await MongoClient.connect('mongodb+srv://Samu666:LedZeppelin1989!@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
     const db = client.db();
 
     const meetupsCollection = db.collection('meetups');
@@ -45,7 +45,7 @@ export async function getStaticProps(context) {
     //Fetch data for a single meetup
     const meetupId = context.params.meetupId;
 
-    const client = await MongoClient.connect('mongodb+srv://Samu666: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@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
+    const client = await MongoClient.connect('mongodb+srv://Samu666:LedZeppelin1989@cluster0.trica.mongodb.net/meetups?retryWrites=true&w=majority');
     const db = client.db();
 
     const meetupsCollection = db.collection('meetups');
