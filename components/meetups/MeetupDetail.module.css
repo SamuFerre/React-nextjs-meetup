@@ -1,0 +1,8 @@
+ .detail {
+     text-align: center;
+ }
+ .detail img {
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+ }
